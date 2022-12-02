@@ -1,0 +1,44 @@
+.hero {
+    position: relative;
+    background-image: url(../img/bg-hero-left.svg), url(../img/bg-hero-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left top 130px, bottom right 165px;
+    background-color: #014E56;
+    padding-top: 133px;
+    padding-bottom: 250px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.hero__title span {
+    color: #F67E7E;
+}
+
+.hero__text {
+    position: relative;
+    width: 445px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 79px;
+}
+
+.hero__text::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+} 
