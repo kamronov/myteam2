@@ -71,3 +71,33 @@
     font-style: italic;
     margin-bottom: 32px;
 }
+
+// About 
+
+.sponsor {
+    background-image: url(../img/bg-clients.png);
+    background-repeat: no-repeat;
+    background-color: #012F34;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.sponsor__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sponsor__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type:none;
+    margin-top: 64px;
+}
