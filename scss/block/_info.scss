@@ -99,7 +99,10 @@
     align-items: center;
     height: 600px;
     margin-top: 64px;
-    position: relative;
+}
+.dir__main {
+    height: 283px;
+    overflow: hidden;
 }
 
 .dir__card {
@@ -111,12 +114,15 @@
     height: 253px;
     background-color: #012F34;
     position: relative;
+    // overflow: hidden;
     &:hover {
         
         .dir__card--hov {
-            visibility: visible;
-
-
+            transform: translateY(-1px);
+        }
+        .dir__plus {
+            transform: rotate(-50deg);
+            background-color: #79C8C7;
         }
     }
 }
@@ -126,12 +132,13 @@
     flex-direction: column;
     align-items: center;
     width: 350px;
-    height: 253px;
-    background-color:  #002529;;
-    position: absolute;
-    top: 0px;
-    visibility: hidden;
+    background-color:  #002529;
+    // z-index: 0;
     transition: all ease 0.3s;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(289px);
+
     h2 {
         font-weight: 700;
         font-size: 18px;
@@ -149,13 +156,12 @@
         margin-bottom: 24px;
         width: 254px;
     }
+    .icons__hov {
+        margin-bottom: 63px;
+    }
     
 }
 
-.dir__card--hov {
-
-transition: all ease 0.3;
-}
 
 .dir__plus {
     display: flex;
@@ -169,6 +175,7 @@ transition: all ease 0.3;
     bottom: -25px;
     cursor: pointer;
     transition: all ease 0.3s;
+    z-index: 1;
 }
 
 .dir__plus::before{
