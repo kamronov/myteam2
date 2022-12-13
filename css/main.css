@@ -423,14 +423,14 @@ body {
   padding-left: 23px;
 }
 
-.info__media--body .info__media--title {
+.info__media--title {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
   color: #F67E7E;
 }
 
-.info__media--body .info__media--text {
+.info__media--text {
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
@@ -440,6 +440,95 @@ body {
   margin-top: 16px;
 }
 
+@media (max-width: 990px) {
+  .info__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .info__media--body {
+    width: 405px;
+    padding-left: 16px;
+  }
+  .info__media--title {
+    font-size: 16px;
+  }
+  .info__media--text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 830px) {
+  .info__inner {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 83px;
+  }
+  .info {
+    background-position: right top;
+  }
+  .info__list {
+    width: 100%;
+  }
+  .info__title {
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+  }
+  .info__media--body {
+    width: 450px;
+    padding-left: 18px;
+  }
+  .info__media--title {
+    font-size: 18px;
+  }
+  .info__media--text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 625px) {
+  .info {
+    padding-top: 100px;
+  }
+  .info__list {
+    height: inherit;
+    display: block;
+  }
+  .info__title {
+    width: auto;
+  }
+  .info__media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info__media img {
+    width: 72px;
+    height: 72px;
+  }
+  .info__media--body {
+    padding-left: 0;
+    margin-bottom: 48px;
+    margin-top: 16px;
+    width: auto;
+  }
+  .info__media--title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .info__media--text {
+    text-align: center;
+    font-size: 15px;
+  }
+  .info__inner {
+    padding-left: 10%;
+  }
+}
+@media (max-width: 550px) {
+  .info__title {
+    width: 240px;
+  }
+}
 .dir {
   background-image: url(../img/thougth-top.svg), url(../img/bg-ditertor-left.png);
   background-repeat: no-repeat;
