@@ -38,3 +38,32 @@
     color:  #fff;
     background-color: #012F34;
 }
+
+@media (max-width:915px) {
+    .footerBefore {
+        background-position: left bottom -25px;
+    }
+    .footerBefore__contact {
+        margin-right: 0px;
+        white-space: nowrap;
+    }
+    .footerBefore__title {
+        margin-left: 59px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+@media (max-width:610px) {
+    .footerBefore__inner {
+        flex-direction: column;
+    }
+    .footerBefore__title {
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+}
+@media (max-width:380px) {
+    .footerBefore__title {
+        text-align: center;
+    }
+}

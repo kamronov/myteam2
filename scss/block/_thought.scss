@@ -31,6 +31,7 @@
 }
 
 .thought__item {
+    margin-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -72,6 +73,27 @@
     margin-bottom: 32px;
 }
 
+
+@media (max-width:820px) {
+    .thoughts__title {
+        margin: 0  auto;
+        width: 80%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .thought__body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .thought__item{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
 // About 
 
 .sponsor {
@@ -100,4 +122,38 @@
     align-items: center;
     list-style-type:none;
     margin-top: 64px;
+}
+
+@media (max-width:850px) {
+    .sponsor {
+        background-position: left top -100px;
+    }
+    .sponsor__title {
+        font-size: 32px;
+    }
+    .sponsor__list {
+        img {
+            width: 60%;
+        }
+    }
+}
+@media (max-width:600px) {
+    .sponsor {
+        background-position: left -100px top -100px;
+        padding-bottom: 90px;
+    }
+    .sponsor__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        li {
+            margin-bottom: 50px;
+        }
+    }
+    .sponsor__list {
+        img {
+            width: auto;
+        }
+    }
 }

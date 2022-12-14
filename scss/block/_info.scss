@@ -139,7 +139,6 @@
         margin-bottom: 48px;
         margin-top: 16px;
         width: auto;
-
     }
     .info__media--title {
         font-size: 18px;
@@ -169,7 +168,6 @@
     background-color: #004047;
     padding-top: 140px;
     padding-bottom: 140px;
-
 }
 
 .dir__inner {
@@ -188,9 +186,8 @@
 .dir__body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 600px;
     margin-top: 64px;
 }
 .dir__main {
@@ -207,9 +204,7 @@
     height: 253px;
     background-color: #012F34;
     position: relative;
-    // overflow: hidden;
     &:hover {
-        
         .dir__card--hov {
             transform: translateY(-1px);
         }
@@ -226,7 +221,6 @@
     align-items: center;
     width: 350px;
     background-color:  #002529;
-    // z-index: 0;
     transition: all ease 0.3s;
     position: absolute;
     bottom: 0;
@@ -252,7 +246,6 @@
     .icons__hov {
         margin-bottom: 63px;
     }
-    
 }
 
 
@@ -307,4 +300,13 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media (max-width:650px) {
+    .dir {
+    background-position: right bottom, left top -100px;
+    }
+    .dir__title {
+        font-size: 32px;    
+    }
 }

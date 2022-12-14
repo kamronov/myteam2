@@ -163,6 +163,42 @@
     background-color: #F67E7E;
 }
 
+@media (max-width:1000px) {
+    .about__title {
+    font-size: 55px;
+    }
+    .about__text{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        width: 60%;
+    }
+}
+@media (max-width:1000px) {
+    .about__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__text::before {
+        display: none;
+    }
+    .about__text{ 
+        font-family: 'Livvic';
+        padding-top: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+    .about {
+        padding-top: 70px;
+        background-position: right bottom -100px;
+    }
+    .about__text {
+        width: 100%;
+    }
+}
 // contact 
 
 .heroContact {
@@ -177,8 +213,6 @@
 
 .heroContact__inner {
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
 }
 
 .heroContact__title {
@@ -200,7 +234,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     color: #fff;
-    width: 540px;
+    max-width: 540px;
     height: 264px;
     list-style-type: none;
 }
@@ -210,7 +244,7 @@
 }
 
 .contact__info__media--body {
-    width: 445px;
+    max-width: 445px;
     padding-left: 23px;
 }
 
@@ -239,7 +273,6 @@
     background-color: #014E56;
     color: #fff;
     font-size: 15px;
-
 }
 .forms  >input::placeholder {
     font-weight: 600;
@@ -273,3 +306,50 @@
     width: 123px;
 }
 
+@media (max-width:1200px) {
+    .heroContact {
+        background-image: none , url(../img/bg-contact-right.png);
+    }
+    
+}
+@media (max-width:900px) {
+    .heroContact {
+        background-image: url(../img/bg-ditertor-left.png), url(../img/bg-contact-right.png);
+    }
+    .heroContact__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .heroContact__title {
+        text-align: center;
+    }
+    .heroContact__subtitle {
+        text-align: center;
+    }
+    .contact__info__list {
+        margin-bottom: 64px;
+    }
+    .forms  >input {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width:570px) {
+    .heroContact {
+        background-image: none , url(../img/bg-contact-right.png);
+        background-position: right bottom -120px;
+        padding-top: 80px;
+    }
+    .heroContact__title {
+        font-size: 40px;
+    }
+    .heroContact__subtitle {
+        font-size: 32px;
+    }
+    .forms {
+        width: 100%;
+    }
+    .forms  >input {
+        width: 100%;
+    }
+}
